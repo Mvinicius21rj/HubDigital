@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #conteudo {
+            background: #dcdcdc;
+            height: 600px;
+            width: 350px;
+            display: flex;
+            /* ordenar box
+            row  row-reverse  column  column-reverse
+            */
+           
+            flex-direction: row;
+            /* ordenar box para baixo 
+            nowraps  wrap wrap-reverse
+            */
+            flex-wrap: wrap;
+            /* centralizar o box ou colocar espaçamento entre os itens
+            flex-start  flex-end  center
+            space-between space-around
+            */
+            justify-content: space-around;
+            /* alinhar no meio da tela os itens
+            atretch  center flex-start flex-end baseline */
+            align-items: center;
+        }
+        .item {
+            background: #fff;
+            border: 1px solid gray;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</style>
+</head>
+<body>
+    <div id="conteudo">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+        <div class="item">04</div>
+
+        <div class="item">04</div>
+
+
+        </div>
+
+    </div>
+</body>
+</html>

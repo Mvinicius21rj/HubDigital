@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #conteudo {
+            background: #dcdcdc;
+            height: 600px;
+            display: flex;
+            /* ordenar box
+            row  row-reverse  column  column-reverse
+            */
+           
+        }
+        .item {
+            background: #fff;
+            border: 1px solid gray;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+       /* .ordem1{
+            order: 1
+        }
+        .ordem2{
+            order: 2
+        }
+        .ordem3{
+            order: 3
+        }
+        .ordem4{
+            order: 4
+        }
+        .ordem5{
+            order: 5
+        }
+    
+        .ordem6{
+            order: 6
+        }
+
+        */
+        
+        .item1{
+            flex-grow: 1;
+        }
+
+
+    </style>
+</style>
+</head>
+<body>
+    <div id="conteudo">
+        <div class="item item1 ordem3">01</div>
+        <div class="item ordem1">02</div>
+        <div class="item ordem4">03</div>
+        <div class="item ordem2">04</div>
+        <div class="item ordem5">05</div>
+
+        <div class="item ordem6">06</div>
+
+
+        </div>
+
+    </div>
+</body>
+</html>
